@@ -208,19 +208,25 @@ const Contact = () => {
                 transition={{
                   delay:index*0.12
                 }}
-                className="
-                group
-                rounded-[32px]
-                border
-                border-[#F3E6EC]
-                bg-white
-                p-10
-                shadow-[0_20px_50px_rgba(0,0,0,0.05)]
-                transition-all
-                duration-500
-                hover:-translate-y-3
-                hover:shadow-[0_30px_70px_rgba(245,111,166,0.18)]
-                "
+                
+              className="
+group
+flex
+flex-col
+items-center
+text-center
+rounded-[32px]
+border
+border-[#F3E6EC]
+bg-white
+p-10
+shadow-[0_20px_50px_rgba(0,0,0,0.05)]
+transition-all
+duration-500
+hover:-translate-y-3
+hover:shadow-[0_30px_70px_rgba(245,111,166,0.18)]
+"  
+
               >
 
 
@@ -270,21 +276,24 @@ const Contact = () => {
 
 
                 <div
-                  className="
-                  mt-8
-                  inline-flex
-                  items-center
-                  gap-3
-                  rounded-full
-                  bg-[#FFF0F6]
-                  px-5
-                  py-3
-                  font-semibold
-                  text-[#E94F92]
-                  transition-all
-                  group-hover:bg-[#F56FA6]
-                  group-hover:text-white
-                  "
+
+className="
+mt-8
+mx-auto
+inline-flex
+items-center
+gap-3
+rounded-full
+bg-[#FFF0F6]
+px-5
+py-3
+font-semibold
+text-[#E94F92]
+transition-all
+group-hover:bg-[#F56FA6]
+group-hover:text-white
+"
+
                 >
 
                   {item.label}
