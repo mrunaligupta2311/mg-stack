@@ -159,7 +159,7 @@ const Contact = () => {
 
       <section
       
-      <section
+      
   className="
   bg-[#FCF7FA]
   px-4
@@ -169,8 +169,7 @@ const Contact = () => {
   "
 >
       
-      >
-
+      
 
 
 <div
