@@ -218,6 +218,7 @@ group
 flex
 flex-col
 items-center
+justify-center
 text-center
 rounded-[32px]
 border
@@ -268,11 +269,13 @@ hover:shadow-[0_30px_70px_rgba(245,111,166,0.18)]
 
 
                 <p
-                  className="
-                  mt-5
-                  leading-8
-                  text-neutral-600
-                  "
+className="
+mt-5
+max-w-[320px]
+leading-8
+text-neutral-600
+mx-auto
+"
                 >
                   {item.description}
                 </p>
@@ -280,12 +283,14 @@ hover:shadow-[0_30px_70px_rgba(245,111,166,0.18)]
 
 
                 <div
-
 className="
 mt-8
+w-full
+max-w-[340px]
 mx-auto
-inline-flex
+flex
 items-center
+justify-center
 gap-3
 rounded-full
 bg-[#FFF0F6]
