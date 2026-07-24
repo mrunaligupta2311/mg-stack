@@ -158,26 +158,31 @@ const Contact = () => {
 
 
       <section
-        className="
-        bg-[#FCF7FA]
-        px-6
-        py-28
-        lg:px-8
-        "
+      
+      <section
+  className="
+  bg-[#FCF7FA]
+  px-4
+  py-20
+  sm:px-6
+  lg:px-8
+  "
+>
+      
       >
 
 
-        <div
-          className="
-          mx-auto
-          grid
-          max-w-7xl
-          gap-8
-          lg:grid-cols-2
-          "
-        >
 
-
+<div
+  className="
+  mx-auto
+  w-full
+  max-w-7xl
+  grid
+  gap-6
+  lg:grid-cols-2
+  "
+>
           {contactOptions.map((item,index)=>{
 
             const Icon=item.icon;
@@ -219,7 +224,7 @@ rounded-[32px]
 border
 border-[#F3E6EC]
 bg-white
-p-10
+p-8 sm:p-10
 shadow-[0_20px_50px_rgba(0,0,0,0.05)]
 transition-all
 duration-500
