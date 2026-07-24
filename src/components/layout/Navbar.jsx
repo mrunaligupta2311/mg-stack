@@ -201,6 +201,7 @@ const Navbar = () => {
  
 
  <Link
+ to="/contact"
   className="
   hidden
   lg:flex
@@ -419,23 +420,26 @@ const Navbar = () => {
                 <Link
                   to="/contact"
                   onClick={() => setMobileMenu(false)}
-                  className="
-                  mt-5
-                  flex
-                  items-center
-                  justify-center
-                  gap-2
-                  rounded-2xl
-                  bg-neutral-950
-                  px-5
-                  py-4
-                  font-semibold
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:bg-[#F56FA6]
-                  "
-                >
+                 
+                 
+                 className="
+mt-6
+flex
+items-center
+justify-center
+gap-2
+rounded-2xl
+bg-[#F56FA6]
+px-5
+py-4
+font-semibold
+text-white
+shadow-[0_12px_30px_rgba(245,111,166,0.30)]
+transition-all
+duration-300
+hover:bg-[#E94F92]
+hover:shadow-[0_18px_40px_rgba(233,79,146,0.35)]
+">
                   Start a Conversation
 
                   <ArrowUpRight size={18} />
