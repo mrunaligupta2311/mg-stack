@@ -198,61 +198,61 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
 
-            <Link
-              to="/contact"
-              
- className="
-hidden
-lg:flex
-group
-items-center
-gap-2
-rounded-full
-bg-[#F56FA6]
-px-7
-py-3.5
-text-sm
-font-semibold
-text-white
-shadow-[0_12px_30px_rgba(245,111,166,0.28)]
-transition-all
-duration-300
-hover:-translate-y-[2px]
-hover:bg-[#E94F92]
-hover:shadow-[0_18px_40px_rgba(233,79,146,0.38)]
-active:bg-[#E94F92]
-active:translate-y-0
-"
-            >
-              Start a Conversation
+ 
 
-              <ArrowUpRight
-  size={17}
+ <Link
   className="
-  transition-transform
+  hidden
+  lg:flex
+  group
+  items-center
+  gap-2
+  rounded-full
+  bg-[#111827]
+  px-7
+  py-3.5
+  text-sm
+  font-semibold
+  text-white
+  shadow-[0_12px_30px_rgba(17,24,39,0.20)]
+  transition-all
   duration-300
-  group-hover:translate-x-1
-  group-hover:-translate-y-1
+  hover:-translate-y-[2px]
+  hover:bg-[#000000]
+  hover:shadow-[0_18px_40px_rgba(17,24,39,0.35)]
+  active:bg-[#000000]
+  active:translate-y-0
   "
-/>
-            </Link>
+>
+  Start a Conversation
 
-            <button
-              onClick={() => setMobileMenu(true)}
-              className="
-              rounded-2xl
-              border
-              border-[#FFD3E5]
-              bg-[#FFF5FA]
-              p-3
-              text-[#F56FA6]
-              transition
-              hover:bg-[#FFD3E5]
-              lg:hidden
-              "
-            >
-              <Menu size={24} />
-            </button>
+  <ArrowUpRight
+    size={17}
+    className="
+    transition-transform
+    duration-300
+    group-hover:translate-x-1
+    group-hover:-translate-y-1
+    "
+  />
+</Link>
+
+<button
+  onClick={() => setMobileMenu(true)}
+  className="
+  rounded-2xl
+  border
+  border-[#E5E7EB]
+  bg-white
+  p-3
+  text-[#111827]
+  transition
+  hover:bg-[#F3F4F6]
+  lg:hidden
+  "
+>
+  <Menu size={24} />
+</button>
 
           </div>
 
