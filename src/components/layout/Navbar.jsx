@@ -209,19 +209,17 @@ const Navbar = () => {
   items-center
   gap-2
   rounded-full
-  bg-[#111827]
-  px-7
-  py-3.5
-  text-sm
-  font-semibold
-  text-white
-  shadow-[0_12px_30px_rgba(17,24,39,0.20)]
-  transition-all
-  duration-300
-  hover:-translate-y-[2px]
-  hover:bg-[#000000]
-  hover:shadow-[0_18px_40px_rgba(17,24,39,0.35)]
-  active:bg-[#000000]
+  bg-[#F56FA6]
+px-5
+py-4
+font-semibold
+text-white
+shadow-[0_12px_30px_rgba(245,111,166,0.30)]
+transition-all
+duration-300
+hover:bg-[#E94F92]
+hover:shadow-[0_18px_40px_rgba(233,79,146,0.35)]
+ active:bg-[#000000]
   active:translate-y-0
   "
 >

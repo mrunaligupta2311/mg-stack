@@ -25,8 +25,12 @@ const Footer = () => {
 
       <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
         {/* Main Grid */}
-        <div className="grid gap-12 lg:grid-cols-3 lg:items-start">
-          {/* Brand Left */}
+
+
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:items-start space-y-12 sm:space-y-0">
+
+
+        {/* Brand Left */}
           <div className="lg:text-left text-center">
             <Link to="/" className="inline-block">
               <h2 className="text-[44px] font-extrabold tracking-tight text-neutral-900 transition-transform duration-300 hover:scale-105">
