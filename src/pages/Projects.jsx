@@ -1,10 +1,29 @@
- import { motion } from "framer-motion";
+ import { useState } from "react";
+import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import projects from "../data/projects";
 
 const Projects = () => {
+
+  const [activeFilter, setActiveFilter] = useState("All");
+
+
+  const filteredProjects =
+    activeFilter === "All"
+      ? projects
+      : projects.filter(
+          (project) => project.department === activeFilter
+        );
+
+
+  const filters = [
+    "All",
+    "Software Development",
+    "Product Design",
+  ];
+
+
   return (
     <main className="relative overflow-hidden bg-white">
 
@@ -28,7 +47,6 @@ const Projects = () => {
         <div className="mx-auto max-w-7xl">
 
           <motion.div
-
             initial={{
               opacity:0,
               y:35
@@ -44,7 +62,6 @@ const Projects = () => {
             }}
 
             className="max-w-4xl"
-
           >
 
             <div className="inline-flex items-center gap-2 rounded-full border border-[#FFD3E5] bg-[#FFF8FB] px-5 py-2">
@@ -85,6 +102,39 @@ const Projects = () => {
 
           </motion.div>
 
+
+          {/* Filter */}
+
+          <div className="mt-14 flex flex-wrap gap-4">
+
+            {filters.map((filter)=>(
+
+              <button
+
+                key={filter}
+
+                onClick={() => setActiveFilter(filter)}
+
+                className={`
+                  rounded-full px-6 py-3 text-sm font-bold tracking-wide transition-all duration-300
+                  ${
+                    activeFilter === filter
+                    ? "bg-[#111827] text-white shadow-lg scale-105"
+                    : "border border-[#FFD3E5] bg-white text-neutral-700 hover:border-[#F56FA6] hover:text-[#F56FA6]"
+                  }
+                `}
+
+              >
+
+                {filter}
+
+              </button>
+
+            ))}
+
+          </div>
+
+
         </div>
 
       </section>
@@ -99,12 +149,12 @@ const Projects = () => {
         <div className="mx-auto max-w-7xl">
 
 
-          {projects.length > 0 && (
+          {filteredProjects.length > 0 && (
 
             <div className="grid gap-10 lg:grid-cols-2">
 
 
-              {projects.map((project,index)=>(
+              {filteredProjects.map((project,index)=>(
 
 
                 <motion.article
@@ -129,14 +179,9 @@ const Projects = () => {
                     delay:index*0.12
                   }}
 
-
                   className="group overflow-hidden rounded-[36px] border border-[#FFE5F0] bg-white shadow-[0_30px_80px_rgba(245,111,166,0.12)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_35px_90px_rgba(245,111,166,0.22)]"
 
                 >
-
-
-
-                  {/* Image */}
 
                   <div className="aspect-video overflow-hidden bg-[#FFF6FA]">
 
@@ -153,15 +198,8 @@ const Projects = () => {
                   </div>
 
 
-
-
-                  {/* Content */}
-
                   <div className="p-8">
 
-
-
-                    {/* Department */}
 
                     <span
 
@@ -176,7 +214,6 @@ const Projects = () => {
                       {project.department}
 
                     </span>
-
 
 
 
@@ -195,9 +232,6 @@ const Projects = () => {
                     </p>
 
 
-
-
-                    {/* Technology */}
 
                     <div className="mt-8 flex flex-wrap gap-3">
 
@@ -221,25 +255,24 @@ const Projects = () => {
 
 
 
-
-                    {/* View */}
-
                     <div className="mt-10">
 
-{(project.pdfUrl || project.liveUrl) && (
-  <a
-    href={project.pdfUrl || project.liveUrl}
-    target="_blank"
-    rel="noreferrer"
-    className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-[#374151] px-6 py-3 !font-semibold !text-white transition-all duration-300 hover:scale-105 hover:bg-black"
-  >
-    View 
-    <ArrowRight size={18} className="text-white" />
-  </a>
-)}
+                      {(project.pdfUrl || project.liveUrl) && (
 
+                        <a
+                          href={project.pdfUrl || project.liveUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-[#374151] px-6 py-3 !font-semibold !text-white transition-all duration-300 hover:scale-105 hover:bg-black"
+                        >
 
+                          View
 
+                          <ArrowRight size={18} className="text-white" />
+
+                        </a>
+
+                      )}
 
                     </div>
 
