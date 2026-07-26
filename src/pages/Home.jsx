@@ -10,12 +10,13 @@ const Home = () => {
     <>
       <Hero />
 
+      <FeaturedProjects />
+
       <Services />
       
       <Process />
 
-      <FeaturedProjects />
-
+      
       <WhyChooseUs />
 
       <CTA />
