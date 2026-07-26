@@ -233,7 +233,7 @@ const Projects = () => {
     rel="noreferrer"
     className="inline-flex items-center gap-2 rounded-full border-2 border-black bg-[#374151] px-6 py-3 !font-semibold !text-white transition-all duration-300 hover:scale-105 hover:bg-black"
   >
-    View Project
+    View 
     <ArrowRight size={18} className="text-white" />
   </a>
 )}

@@ -146,7 +146,7 @@ const FeaturedProjects = () => {
                        
                       >
 
-                        Visit Live Project
+                        View  
 
                         <ExternalLink size={18} />
 
@@ -170,7 +170,7 @@ const FeaturedProjects = () => {
 
                       >
 
-                        View Case Study
+                        View  
 
                         <ExternalLink size={18} />
 
