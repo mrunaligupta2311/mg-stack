@@ -199,9 +199,11 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
 
  
+<a
+  href="https://wa.me/917359808797"
+  target="_blank"
+  rel="noopener noreferrer"
 
- <Link
- to="/contact"
   className="
   hidden
   lg:flex
@@ -234,7 +236,7 @@ hover:shadow-[0_18px_40px_rgba(233,79,146,0.35)]
     group-hover:-translate-y-1
     "
   />
-</Link>
+</a>
 
 <button
   onClick={() => setMobileMenu(true)}
@@ -415,8 +417,11 @@ hover:shadow-[0_18px_40px_rgba(233,79,146,0.35)]
 
                 ))}
 
-                <Link
-                  to="/contact"
+      <a
+  href="https://wa.me/917359808797"
+  target="_blank"
+  rel="noopener noreferrer"
+
                   onClick={() => setMobileMenu(false)}
                  
                  
@@ -441,8 +446,7 @@ hover:shadow-[0_18px_40px_rgba(233,79,146,0.35)]
                   Start a Conversation
 
                   <ArrowUpRight size={18} />
-                </Link>
-
+</a>
               </nav>              {/* Mobile Footer */}
 
               <div
