@@ -1,15 +1,11 @@
- import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
-  Palette,
   PenTool,
   MonitorSmartphone,
   Sparkles,
-  ArrowRight,
   CheckCircle2,
   Layers,
 } from "lucide-react";
-
 const availableServices = [
   {
     title: "Product Design",

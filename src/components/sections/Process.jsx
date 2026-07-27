@@ -4,10 +4,8 @@ import {
   PencilRuler,
   Code2,
   Rocket,
-  ArrowRight,
+  
 } from "lucide-react";
-import { Link } from "react-router-dom";
-
 const processSteps = [
   {
     number: "01",

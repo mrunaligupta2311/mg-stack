@@ -4,48 +4,9 @@ import {
   ArrowRight,
   ArrowUpRight,
   Sparkles,
-  Globe,
   Palette,
   Code2,
-  Layers3,
-  MoveRight,
 } from "lucide-react";
-
-const process = [
-  "Discover",
-  "Design",
-  "Develop",
-  "Launch",
-];
-
-const technologies = [
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "PostgreSQL",
-  "MongoDB",
-  "Tailwind CSS",
-  "Figma",
-];
-
-const services = [
-  {
-    title: "Product Design",
-    description: "Research • UX • UI",
-    icon: Palette,
-  },
-  {
-    title: "Software Development",
-    description: "Modern • Scalable",
-    icon: Code2,
-  },
-  {
-    title: "Digital Products",
-    description: "Web • Mobile • SaaS",
-    icon: Globe,
-  },
-];
 
 const Hero = () => {
   return (
