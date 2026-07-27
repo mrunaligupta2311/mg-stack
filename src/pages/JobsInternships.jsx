@@ -1,5 +1,7 @@
  import { motion } from "framer-motion";
-import {
+import { useNavigate } from "react-router-dom";
+
+ import {
   Palette,
   Code2,
   Laptop,
@@ -75,7 +77,7 @@ const benefits = [
 
 const JobsInternships = () => {
 
-  
+  const navigate = useNavigate();
 
 return (
   <main className="overflow-hidden bg-white">
@@ -114,6 +116,30 @@ return (
 
 
       <div className="relative mx-auto max-w-7xl">
+<button
+  onClick={() => navigate(-1)}
+  className="
+  mb-8
+  -mt-16
+  inline-flex
+  items-center
+  gap-2
+  rounded-full
+  border
+  border-[#F3E6EC]
+  bg-white
+  px-5
+  py-3
+  text-sm
+  font-semibold
+  text-neutral-700
+  transition
+  hover:border-[#F56FA6]
+  hover:text-[#F56FA6]
+  "
+>
+  ← Back
+</button>
 
         <motion.div
           initial={{
