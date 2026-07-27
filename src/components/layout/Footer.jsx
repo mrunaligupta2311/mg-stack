@@ -13,7 +13,7 @@ const socialLinks = [
   {
     name: "Instagram",
     icon: SiInstagram,
-    url: "https://instagram.com/mg.stack",
+    url: "https://instagram.com/mg_stack",
     color: "#E4405F",
   },
 ];
