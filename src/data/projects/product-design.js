@@ -28,27 +28,27 @@ const productDesignProjects = [
     title: "CryptoDesk",
     department: "Product Design",
     description:
-      "A modern cryptocurrency dashboard designed with a focus on usability, analytics, and data visualization.",
+      "CryptoDesk is a Sleek cryptocurrency landing page crafted to showcase market insights , pricing, and digital asset service with a morde, responsive, and visually engaging user experience.",
     image: cryptoDeskCover,
     technologies: ["Product Design"],
     pdfUrl: cryptoDeskPdf,
   },
   {
     id: 102,
-    title: "Furniture Website",
+    title: "Pride",
     department: "Product Design",
     description:
-      "A premium furniture shopping experience with a clean, modern, and conversion-focused interface.",
-    image: furnitureWebsiteCover,
+   " Pride is a modern music streaming platform designed to help users discover trending artists, explore curated playlists, and enjoy an immersive listening experience through a sleek and visually engaging interface.",
+    image: prideCover,
     technologies: ["Product Design"],
-    pdfUrl: furnitureWebsitePdf,
+    pdfUrl: pridePdf,
   },
   {
     id: 103,
     title: "GPT Prompting",
     department: "Product Design",
     description:
-      "A structured AI prompting platform designed to improve productivity and simplify prompt management.",
+   "A modern AI platform designed to help users discover, organize, and utilize high-quality ChatGPT prompts through a clean, responsive, and user-friendly interface.",
     image: gptPromptingCover,
     technologies: ["Product Design"],
     pdfUrl: gptPromptingPdf,
@@ -58,7 +58,7 @@ const productDesignProjects = [
     title: "Love & Magic Website",
     department: "Product Design",
     description:
-      "A visually engaging website concept crafted with elegant layouts and immersive user interactions.",
+    "Love & Magic is a luxury gift customization platform that allows users to create personalized gift buckets with chocolates, flowers, and heartfelt surprises, delivering a memorable gifting experience for every special occasion.",
     image: loveMagicWebsiteCover,
     technologies: ["Product Design"],
     pdfUrl: loveMagicWebsitePdf,
@@ -68,37 +68,38 @@ const productDesignProjects = [
     title: "MYway Clothes App",
     department: "Product Design",
     description:
-      "A fashion shopping application focused on seamless browsing, discovery, and checkout experiences.",
+   "MyWay is a modern fashion shopping application designed to simplify online apparel browsing with intuitive product discovery, smart filtering, and a seamless mobile shopping experience.",
     image: mywayClothesAppCover,
     technologies: ["Product Design"],
     pdfUrl: mywayClothesAppPdf,
   },
   {
     id: 106,
+    title: "WoodArt Website",
+    department: "Product Design",
+    description:
+      "WoodArt is a premium furniture e-commerce platform showcasing modern interior collections with an elegant shopping experience, detailed product displays, and seamless online browsing.",
+    image: furnitureWebsiteCover,
+    technologies: ["Product Design"],
+    pdfUrl: furnitureWebsitePdf,
+  },
+  {
+    id: 107,
     title: "Modern Dashboard",
     department: "Product Design",
     description:
-      "A clean dashboard interface built to present complex business insights in a simple and intuitive way.",
+  " Daccord is a modern community platform designed to help users discover interest-based groups, engage in meaningful discussions, and connect with like-minded people through an immersive and visually appealing interface.",
     image: modernDashboardCover,
     technologies: ["Product Design"],
     pdfUrl: modernDashboardPdf,
   },
-  {
-    id: 107,
-    title: "Pride",
-    department: "Product Design",
-    description:
-      "A thoughtfully designed digital experience with emphasis on accessibility, clarity, and visual consistency.",
-    image: prideCover,
-    technologies: ["Product Design"],
-    pdfUrl: pridePdf,
-  },
+  
   {
     id: 108,
     title: "Social Media App",
     department: "Product Design",
     description:
-      "A modern social networking application designed to encourage engagement through intuitive interactions.",
+    "A feature-rich social networking application that enables users to connect, share moments, discover new content, and communicate through an intuitive and engaging social experience. ",  
     image: socialMediaAppCover,
     technologies: ["Product Design"],
     pdfUrl: socialMediaAppPdf,

@@ -6,7 +6,6 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Services from "../pages/Services";
 import Projects from "../pages/Projects";
-import Process from "../pages/Process";
 import Careers from "../pages/Careers";
 import JobsInternships from "../pages/JobsInternships";
 import Contact from "../pages/Contact";
@@ -42,11 +41,7 @@ const AppRoutes = () => {
           element={<Projects />} 
         />
 
-        <Route 
-          path="/process" 
-          element={<Process />} 
-        />
-
+       
         <Route 
           path="/careers" 
           element={<Careers />} 
