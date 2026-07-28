@@ -7,7 +7,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: FaLinkedinIn,
-    url: "www.linkedin.com/in/mrunaliguptastack",
+   url: "https://www.linkedin.com/in/mrunaliguptastack",
     color: "#0A66C2",
   },
   {
